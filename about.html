@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/expanding.css">	
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.popupoverlay.js"></script>
+		
+		<title>Kjetil Albrechtsen</title>
+		<script type="text/javascript">
+			window.addEventListener('load',activateBox,false);
+			function activateBox() {
+			document.getElementById("slide").checked = true;
+			}
+		</script>
+		<script>
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+			if ($(this).attr('href').indexOf("popup") >= 0){
+			}
+			else if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html,body').animate({
+				  scrollTop: target.offset().top -60
+				}, 1000);
+				return false;
+			  }
+			}
+		  });
+		});
+		</script>		
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<script type="text/javascript">
+			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+				window.location = "./aboutm.html";
+			}
+		</script>
+	<div class="undermenu">
+	<div class="menu top left horizontal blue">
+		<input id="slide" name="slide"         type="checkbox">
+		<label for="slide" class="icon open">
+		<i class="fa fa-bars cornericon"></i>
+		</label>
+		<nav class="navigation">
+			<ul>
+				<li>
+					<a href="index.html">
+					<ul>
+					<li><i class="fa fa-home"></i></li>    
+					<li><span>home</span></li>
+					</ul>
+					</a>
+				</li>	
+				<li class="active">
+					<a href="">
+					<ul>
+					<li><i class="fa fa-user"></i></li>
+					<li><span>about</span></li>
+					</ul>
+					</a>
+				</li>
+				<li>
+					<a href="portfolio.html">
+					<ul>
+						<li><i class="fa fa-camera"></i></li>
+						<li><span>portfolio</span></li>
+					</ul>
+					</a>
+				</li>
+				<li>
+					<a href="blog.html">
+					<ul>
+						<li><i class="fa fa-bookmark"></i></li>
+						<li><span>blog</span></li>
+					</ul>
+					</a>
+				</li>
+				<li>
+					<a href="#popupContact" class="popupContact_open">
+					<ul>
+						<li><i class="fa fa-send"></i></li>
+						<li><span>contact</span></li>
+					</ul>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	</div>
+	<article class="topbox">
+		<div id="topbar"></div>
+		<h1>About Me</h1>
+		<img class="picofme" src="images/mybeard.jpg" alt="picture of me"></img>
+		
+		<div class="desc">
+			<mark>Hi, I'm Kjetil, I don't know if you know anything about beards, but mine is pretty righteous. Seriously, look at this fucking thing. If this wasn't enough for you to give me a job, I'm also about to become an actual doctor... OF SPACE PHYSICS. Have you ever used physics? I'm pretty sure you have otherwise you would have floated away by now. I know all about magnets and have had extensive training in how to deal with dihydrogen monoxide, the number one substance found in the premature dead.</mark>
+		
+		</div>
+	
+	</article>
+	
+	<article class="articlehead edu">
+		<h2>Education</h2>
+		<div class="edutext">
+		<p>In September 2010, I started my degree in the physical art of love. I quickly excelled at what makes a Bath student great. In my first year I managed to drink 30 whole Jagerbombs in a single evening, I did fall asleep on the bar but I got dragged home ok so I'm counting it as a win. I successfully swan dived over a 5 foot fence near a wonderful establishment called Weir Lounge, fortunately my fall was cushioned by some soft thorn bushes which only left three or four foot long scars on my arms.</p>
+		<p>I don't want you to think that I only put the effort in for university, just recently I travelled to a derelict little town in Devon and managed to successfully sit in a bush full of stingers for almost five minutes without realising.
+		
+		</p>
+		<br/>
+		<img width="30%" src="images/uoblogowhite.png"></img>
+		</div>
+	</article>
+	
+	<article class="articlehead exp">
+		<h2>Experience</h2>
+		<div class="edutext">
+		<p>During my second year at university I successfully pulled of the "ol' switcheroo" on two of my housemates. Over the space of three hours I managed to completely swap every item in their rooms across the house. The Chinese guy was so mad he punched through a window. </p>
+		<br/>
+		<p>I am also great at international purchasing, having regularly bought chinese dental supplies for my housemate.
+		</p>
+		<br/>
+	
+		</div>
+	</article>
+
+	<article class="articlehead site">
+		<h2>About This Site</h2>
+		<div class="edutext">
+		<p>This site dope isn't it... Admit it.
+		</p>
+		<br/>
+		<img width="20%" src="images/html5img.png"></img><img width="20%" src="images/css3image.png"></img><img width="20%" src="images/gitimage.png"></img>
+	
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</article>
+	<section>
+	<footer class="wFooter">
+	<section class="footerContent">
+		<ul class="contactIcons">
+			<li style="list-style-type: none;"><a href="mailto:KjetilAl@facebook.com"><i class="iconfoot fa fa-envelope"></i></a></li>
+			<li style="list-style-type: none;"><a href="https://no.linkedin.com/pub/kjetil-albrechtsen/8a/632/86b"><i class="iconfoot fa fa-linkedin"></i></a></li>
+			<li style="list-style-type: none;"><a href="www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="iconfoot fa fa-youtube-square"></i></a></li>
+			<li style="list-style-type: none;"><a href="https://github.com/mightynordicbeard"><i class="iconfoot fa fa-git"></i></a></li>
+		</ul>
+		<div class="shortInfo">
+			<br/>
+			&copy; 2015 Kjetil Albrechtsen<br/>
+			Run with <a href="https://www.github.com">Github</a><br>
+			CV available on request
+		</div>
+	</section>
+	</footer>
+	</section>
+	
+
+		<!--contact me popup-->
+	
+	<div id="popupContact" class="popupcontContact">
+
+	<h3>Want to contact me?</h3>
+	</br>
+
+	<p>I'd love to hear from you!</p>
+	<section class="contactContent">
+		<ul class="contactIcons">
+			<li style="list-style-type: none;"><a href="mailto:KjetilAl@facebook.com"><i class="iconfoot fa fa-envelope"></i></a></li>
+			<li style="list-style-type: none;"><a href="https://no.linkedin.com/pub/kjetil-albrechtsen/8a/632/86b"><i class="iconfoot fa fa-linkedin"></i></a></li>
+			<li style="list-style-type: none;"><a href="www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="iconfoot fa fa-youtube-square"></i></a></li>
+			<li style="list-style-type: none;"><a href="https://github.com/mightynordicbeard"><i class="iconfoot fa fa-git"></i></a></li>
+		</ul>
+	</section>
+	
+	
+	
+	<div style="text-align:center;">
+	<a href="" class="buttonOC closepopup popupContact_close">close</a>
+	</div>
+</div>
+
+<script>
+$(document).ready(function () {
+
+    $('#popupContact').popup({
+		color: 'white',
+		opacity: 1,
+
+        pagecontainer: '.container',
+        transition: 'all 0.3s'
+    });
+
+});
+</script>
+
+<style>
+#popupContact {
+    -webkit-transform: scale(0.8);
+       -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+}
+.popup_visible #popupContact {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+}
+</style>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+
+</html>
